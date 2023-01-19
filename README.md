@@ -25,7 +25,16 @@ Java Pong Game
 
 4-Drawing the Player
 <ul>
-    <li></li>
-    <li></li>
+    <li>Create paddles and ball on the screen and will use this to detect collisions.</li>
+    <li>Create class <code>Rect</code> for paddle and ball.</li>
+    <li>Create new Constants for width/height/color for paddle/ball and padding.</li>
+    <li>Create playerOne, ai, and ball as new <code>Rects</code> in <code>public Window</code>. Draw them in <code>update</code> method.</li>
+</ul>
+
+5-Making the Player Controller
+<ul>
     <li></li>
 </ul>
+
+
+
