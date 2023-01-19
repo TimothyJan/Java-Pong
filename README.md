@@ -16,9 +16,16 @@ Java Pong Game
     <li>Import <code>Graphics2D</code> to create Graphics <code>g2</code> in <code>Window</code> method and update g2 in <code>update</code> method.</li>
 </ul>
 
-Handling User Input
+3-Handling User Input
 <ul>
-    <li></li>
+    <li>Create new class <code>KL</code> to implement KeyListener. Create methods <code>keyPressed</code>, <code>keyReleased</code> and <code>isKeyPressed</code>.</li>
+    <li>Create new KL <code>keyListener</code> in Window class and use using <code>this.addKeyListener(keyListener)</code> in <code>public Window</code>.</li>
+    <li>Add <code>keyListener</code> to listen for <code>KeyEvents</code> in <code>update</code> method.</li>
 </ul>
 
-
+4-Drawing the Player
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
