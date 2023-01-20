@@ -33,7 +33,7 @@ Java Pong Game
 
 5-Making the Player Controller
 <ul>
-    <li>Implement the player controller to move the player.</li>
+    <li>Implement the PlayerController to move the player and ai.</li>
     <li>Create new class <code>PlayerController</code>.</li>
     <li>Initialize <code>PlayerController</code> in <code>Window</code>.</li>
     <li>For smoother gameplay:
@@ -49,9 +49,23 @@ Java Pong Game
     <li>Create new constant <code>PADDLE_SPEED</code> for use in paddle movement.</li>
 </ul>
 
+6a - Moving the Ball
+<ul>
+    <li>Create new class <code>Ball</code> to handle Ball movement and collisions.</li>
+    <li>In <code>Window.java</code>, initialize <code>Ball ball</code> and make sure it is updated in <code>update</code> method.</li>
+</ul>
+
+
+
 6-AI Controller
 <ul>
     <li></li>
     <li></li>
     <li></li>
 </ul>
+
+In <code>PlayerController</code>,create a constructor for the AI that doesn't use the keyListener.
+Create new class <code>AIController</code>. AI paddle will respond based on the ball being below or above it.
+In <code>Window</code>, initialize a <code>AIController</code> for <code>aiController</code>.
+
+
