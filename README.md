@@ -55,18 +55,18 @@ Java Pong Game
     <li>In <code>Window.java</code>, initialize <code>Ball ball</code> and make sure it is updated in <code>update</code> method. Update and draw ball.</li>
 </ul>
 
-
-
 6-AI Controller
 <ul>
     <li>In <code>PlayerController</code>,create a constructor for the AI that doesn't use the keyListener.</li>
-    <li>Create new class <code>AIController</code>. AI paddle will respond based on the ball being below or above it.</li>
+    <li>Create new class <code>AIController</code>. AI paddle will respond based on the ball being below or above the AI paddle.</li>
     <li>In <code>Window</code>, initialize a <code>AIController</code> for <code>aiController</code>. Update and draw ai.</li>
 </ul>
 
 7-Keeping Score
 <ul>
     <li>Create new class <code>Text.java</code>. </li>
-    <li>In <code>Window</code>, create and initialize <code>Text leftScoreText</code>/<code>rightScoreText</code>. Also create and initialize <code>int leftScore, rightScore</code>.</li>
-    <li></li>
+    <li>Create new constants for x/y positions for scores and score font size.</li>
+    <li>In <code>Window</code>, create and initialize <code>Text leftScoreText</code>/<code>rightScoreText</code>.</li>
+    <li>In <code>Ball</code>, add <code>Text leftScoreText</code>/<code>rightScoreText</code> as arguments to <code>Ball</code>.</li>
+    <li>Create new constant for win score and add code to determine win condition after ball passes either paddle.</li>
 </ul>
