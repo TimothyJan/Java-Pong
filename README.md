@@ -52,20 +52,28 @@ Java Pong Game
 6a - Moving the Ball
 <ul>
     <li>Create new class <code>Ball</code> to handle Ball movement and collisions.</li>
-    <li>In <code>Window.java</code>, initialize <code>Ball ball</code> and make sure it is updated in <code>update</code> method.</li>
+    <li>In <code>Window.java</code>, initialize <code>Ball ball</code> and make sure it is updated in <code>update</code> method. Update and draw ball.</li>
 </ul>
 
 
 
 6-AI Controller
 <ul>
-    <li></li>
+    <li>In <code>PlayerController</code>,create a constructor for the AI that doesn't use the keyListener.</li>
+    <li>Create new class <code>AIController</code>. AI paddle will respond based on the ball being below or above it.</li>
+    <li>In <code>Window</code>, initialize a <code>AIController</code> for <code>aiController</code>. Update and draw ai.</li>
+</ul>
+
+7-Bouncing the Ball
+<ul>
+    <li>To make the game more interesting, if the ball hits higher on the paddle it will go at an upward angle and vice versa if the ball hits lower on the paddle. If the ball hits the center of the paddle it will reflect at a 0 degree.</li>
     <li></li>
     <li></li>
 </ul>
 
-In <code>PlayerController</code>,create a constructor for the AI that doesn't use the keyListener.
-Create new class <code>AIController</code>. AI paddle will respond based on the ball being below or above it.
-In <code>Window</code>, initialize a <code>AIController</code> for <code>aiController</code>.
-
-
+8-Keeping Score
+<ul>
+    <li>Create new class <code>Text.java</code>. </li>
+    <li>In <code>Window</code>, initialize <code>Text leftScoreText</code>/<code>rightScoreText</code>. Also create <code>int leftScore, rightScore</code>.</li>
+    <li></li>
+</ul>

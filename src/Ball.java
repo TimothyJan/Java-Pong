@@ -15,9 +15,9 @@ public class Ball {
     public void update(double dt) {
         if (vx < 0.0) { /* Going left to Player*/
             if (this.rect.x <= this.leftPaddle.x + this.leftPaddle.width &&
-                this.rect.x + this.rect.width >= this.leftPaddle.x &&
-                this.rect.y >= this.leftPaddle.y &&
-                this.rect.y <= this.leftPaddle.y + this.leftPaddle.height) {
+                    this.rect.x + this.rect.width >= this.leftPaddle.x &&
+                    this.rect.y >= this.leftPaddle.y &&
+                    this.rect.y <= this.leftPaddle.y + this.leftPaddle.height) {
                 this.vx *= -1.2;
                 this.vy *= 1.2;
             } else if (this.rect.x + this.rect.width < this.leftPaddle.x){
@@ -26,9 +26,9 @@ public class Ball {
         }
         else if (vx > 0.0) { /* Going right to AI*/
             if (this.rect.x + this.rect.width >= this.rightPaddle.x &&
-                this.rect.x <= this.rightPaddle.x + this.rightPaddle.width &&
-                this.rect.y >= this.rightPaddle.y &&
-                this.rect.y <= this.rightPaddle.y + this.rightPaddle.height) {
+                    this.rect.x <= this.rightPaddle.x + this.rightPaddle.width &&
+                    this.rect.y >= this.rightPaddle.y &&
+                    this.rect.y <= this.rightPaddle.y + this.rightPaddle.height) {
                 this.vx *= -1.2;
                 this.vy *= 1.2;
             } else if (this.rect.x + this.rect.width > this.rightPaddle.x + this.rightPaddle.width) {
