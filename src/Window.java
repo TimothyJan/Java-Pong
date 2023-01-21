@@ -13,8 +13,8 @@ public class Window extends JFrame implements Runnable {
     public PlayerController playerController;
     public AIController aiController;
     public Ball ball;
-//    public Text leftScoreText, rightScoreText;
-    public int leftScore, rightScore;
+    public Text leftScoreText, rightScoreText;
+
 
     public Window() {
         this.setSize(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
@@ -27,6 +27,9 @@ public class Window extends JFrame implements Runnable {
         Constants.TOOLBAR_HEIGHT = this.getInsets().top;
         Constants.INSETS_BOTTOM = this.getInsets().bottom;
 
+        leftScoreText = new Text(0, new Font("Times New Roman", Font.PLAIN,Constants.TEXT_SIZE), Constants.TEXT_X_POSITION,Constants.TEXT_Y_POSITION);
+        rightScoreText = new Text(0, new Font("Times New Roman", Font.PLAIN,Constants.TEXT_SIZE), Constants.SCREEN_WIDTH-Constants.TEXT_X_POSITION-16,Constants.TEXT_Y_POSITION);
+
         g2 = (Graphics2D)this.getGraphics();
 
         playerOne = new Rect(Constants.HZ_PADDING,40,Constants.PADDLE_WIDTH,Constants.PADDLE_HEIGHT,Constants.PADDLE_COLOR);
@@ -35,13 +38,9 @@ public class Window extends JFrame implements Runnable {
         ai = new Rect(Constants.SCREEN_WIDTH-Constants.PADDLE_WIDTH-Constants.HZ_PADDING,40,Constants.PADDLE_WIDTH,Constants.PADDLE_HEIGHT,Constants.PADDLE_COLOR);
 
         ballRect = new Rect(Constants.SCREEN_WIDTH/2,Constants.SCREEN_HEIGHT/2,Constants.BALL_WIDTH,Constants.BALL_WIDTH,Constants.BALL_COLOR);
-        ball = new Ball(ballRect, playerOne, ai);
+        ball = new Ball(ballRect, playerOne, ai, leftScoreText, rightScoreText);
 
         aiController = new AIController(new PlayerController(ai), ballRect);
-        leftScore = 0;
-        rightScore = 0;
-
-
     }
 
     public void update(double dt) {
@@ -67,10 +66,11 @@ public class Window extends JFrame implements Runnable {
         g2.setColor(Color.BLACK);
         g2.fillRect(0,0,Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 
-//        Font font = new Font("Times New Roman", Font.PLAIN, 14);
-//        Text text = new Text("Sample", font, 100, 100);
-//
-//        text.draw(g2);
+        Font font = new Font("Times New Roman", Font.PLAIN, 14);
+        Text text = new Text("Sample", font, 100, 100);
+
+        leftScoreText.draw(g2);
+        rightScoreText.draw(g2);
         playerOne.draw(g2);
         ai.draw(g2);
         ballRect.draw(g2);

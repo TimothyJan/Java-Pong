@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15fece69-6e89-4126-89c6-4c570de3f8c9" name="Changes" comment="Finished 6A-Moving the Ball and 6-AI Controller">
+    <list default="true" id="15fece69-6e89-4126-89c6-4c570de3f8c9" name="Changes" comment="Created Window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ball.java" afterDir="false" />
@@ -89,13 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674175342442</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed 7 Bouncing the ball">
+      <created>1674262491935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674262491935</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Window" />
     <MESSAGE value="Finished 3-Handling User Input" />
     <MESSAGE value="Finished 5-Player Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished 5-Player Controller" />
+    <MESSAGE value="Fixed 7 Bouncing the ball" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed 7 Bouncing the ball" />
   </component>
 </project>

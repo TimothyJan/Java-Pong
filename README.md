@@ -64,16 +64,9 @@ Java Pong Game
     <li>In <code>Window</code>, initialize a <code>AIController</code> for <code>aiController</code>. Update and draw ai.</li>
 </ul>
 
-7-Bouncing the Ball
-<ul>
-    <li>To make the game more interesting, if the ball hits higher on the paddle it will go at an upward angle and vice versa if the ball hits lower on the paddle. If the ball hits the center of the paddle it will reflect at a 0 degree.</li>
-    <li></li>
-    <li></li>
-</ul>
-
-8-Keeping Score
+7-Keeping Score
 <ul>
     <li>Create new class <code>Text.java</code>. </li>
-    <li>In <code>Window</code>, initialize <code>Text leftScoreText</code>/<code>rightScoreText</code>. Also create <code>int leftScore, rightScore</code>.</li>
+    <li>In <code>Window</code>, create and initialize <code>Text leftScoreText</code>/<code>rightScoreText</code>. Also create and initialize <code>int leftScore, rightScore</code>.</li>
     <li></li>
 </ul>
