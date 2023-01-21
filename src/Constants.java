@@ -12,8 +12,12 @@ public class Constants {
     public static final Color BALL_COLOR = Color.WHITE;
 
     public static final double HZ_PADDING = 40;
+
     public static double TOOLBAR_HEIGHT;
     public static double INSETS_BOTTOM;
 
     public static final double PADDLE_SPEED = 250;
+    public static final double BALL_SPEED = 100;
+
+    public static final double MAX_ANGLE = 45;
 }

@@ -3,6 +3,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Color;
 import java.awt.Image;
+import java.awt.Font;
 
 public class Window extends JFrame implements Runnable {
 
@@ -12,6 +13,8 @@ public class Window extends JFrame implements Runnable {
     public PlayerController playerController;
     public AIController aiController;
     public Ball ball;
+//    public Text leftScoreText, rightScoreText;
+    public int leftScore, rightScore;
 
     public Window() {
         this.setSize(Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
@@ -35,6 +38,10 @@ public class Window extends JFrame implements Runnable {
         ball = new Ball(ballRect, playerOne, ai);
 
         aiController = new AIController(new PlayerController(ai), ballRect);
+        leftScore = 0;
+        rightScore = 0;
+
+
     }
 
     public void update(double dt) {
@@ -60,6 +67,10 @@ public class Window extends JFrame implements Runnable {
         g2.setColor(Color.BLACK);
         g2.fillRect(0,0,Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 
+//        Font font = new Font("Times New Roman", Font.PLAIN, 14);
+//        Text text = new Text("Sample", font, 100, 100);
+//
+//        text.draw(g2);
         playerOne.draw(g2);
         ai.draw(g2);
         ballRect.draw(g2);
