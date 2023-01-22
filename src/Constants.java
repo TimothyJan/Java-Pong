@@ -26,5 +26,5 @@ public class Constants {
     public static final int TEXT_Y_POSITION = 70;
     public static final int TEXT_X_POSITION = 10;
     public static final int TEXT_SIZE = 40;
-    public static final int WIN_SCORE = 1;
+    public static final int WIN_SCORE = 11;
 }

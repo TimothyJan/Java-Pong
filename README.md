@@ -70,3 +70,14 @@ Java Pong Game
     <li>In <code>Ball</code>, add <code>Text leftScoreText</code>/<code>rightScoreText</code> as arguments to <code>Ball</code>.</li>
     <li>Create new constant for win score and add code to determine win condition after ball passes either paddle.</li>
 </ul>
+
+8-MainMenu
+<ul>
+    <li>Create new class MainMenu. Create <code>Texts</code> for <code>startGame</code>, <code>exitGame</code> and <code>pongTitle</code> and draw them.</li>
+    <li>Create new class <code>ML</code> for Mouse Listener to listen for mouse hover/click on the texts. Create and initialize <code>ML</code> in <code>MainMenu</code>.</li>
+    <li>In <code>update</code> in <code>MainMenu</code> add code to change color when hovering over startGame and exitGame.</li>
+    <li>Update <code>Main</code> for GameWindow(1) or MainMenu(0) states. Create method <code>changeState</code> to change states. </li>
+    <li>In <code>MainMenu</code>, update mouse hover with <code>Main.changeState(1);</code>. Add <code>this.dispose();</code> to <code>run</code> method when game state is changed to close MainMenu window.</li>
+    <li>In <code>Window</code>, add <code>this.dispose();</code> to <code>run</code> method when game state is changed to close gameWindow.</li>
+    <li>In <code>Ball</code>, change the game state to 2 when player/ai wins and kill all threads.</li>
+</ul>
