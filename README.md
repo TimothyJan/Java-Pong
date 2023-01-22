@@ -1,6 +1,12 @@
 # Java-Pong
 Java Pong Game
 
+<h3>Main Menu</h3>
+<img src="Screenshots/1-MainMenu.png" alt="Main Menu" width="75%" height="75%">
+
+<h3>Gameplay</h3>
+<img src="Screenshots/2-Game.png" alt="Gameplay" width="75%" height="75%">
+
 1-Creating the Window
 <ul>
     <li>Create Window using JFrame methods in <code>Window.java</code>.</li>
