@@ -63,6 +63,8 @@ public class Ball {
             this.vy = 10.0;
             if(rightScore >= Constants.WIN_SCORE) {
                 System.out.println("AI wins!");
+                /* Change game state to MainMenu */
+                Main.changeState(2);
             }
         } else if (this.rect.x > rightPaddle.x + rightPaddle.width) { /* User scored */
             int leftScore = Integer.parseInt(leftScoreText.text);
@@ -75,6 +77,8 @@ public class Ball {
             this.vy = 10.0;
             if(leftScore >= Constants.WIN_SCORE) {
                 System.out.println("Player wins!");
+                /* Change game state to MainMenu */
+                Main.changeState(2);
             }
         }
     }

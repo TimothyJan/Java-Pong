@@ -14,6 +14,7 @@ public class Window extends JFrame implements Runnable {
     public AIController aiController;
     public Ball ball;
     public Text leftScoreText, rightScoreText;
+    public boolean isRunning = true;
 
 
     public Window() {
@@ -67,7 +68,6 @@ public class Window extends JFrame implements Runnable {
         g2.fillRect(0,0,Constants.SCREEN_WIDTH, Constants.SCREEN_HEIGHT);
 
         Font font = new Font("Times New Roman", Font.PLAIN, 14);
-        Text text = new Text("Sample", font, 100, 100);
 
         leftScoreText.draw(g2);
         rightScoreText.draw(g2);
@@ -76,20 +76,23 @@ public class Window extends JFrame implements Runnable {
         ballRect.draw(g2);
     }
 
-    public void run() {
-        while (true) {
-            double lastFrameTime = 0.0;
-            while (true) {
-                double time = Time.getTime();
-                double deltaTime = time - lastFrameTime;
-                lastFrameTime = time;
-                update(deltaTime);
+    public void stop() {
+        isRunning = false;
+    }
 
-                /*Check fps*/
+    public void run() {
+        double lastFrameTime = 0.0;
+        while (isRunning) {
+            double time = Time.getTime();
+            double deltaTime = time - lastFrameTime;
+            lastFrameTime = time;
+            update(deltaTime);
+            /*Check fps*/
 //                try{
 //                    Thread.sleep(30);
 //                } catch(Exception e) {}
-            }
         }
+        this.dispose();
+        return;
     }
 }
